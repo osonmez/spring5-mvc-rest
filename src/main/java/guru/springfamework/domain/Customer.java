@@ -7,16 +7,14 @@ import javax.persistence.Id;
 
 import lombok.Data;
 
-/**
- * Created by jt on 9/24/17.
- */
 @Data
 @Entity
-public class Category {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String name;
+public class Customer {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
+	private String firstname;
+    private String lastname;
 
 }
